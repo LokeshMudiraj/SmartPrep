@@ -28,7 +28,7 @@ interface InterviewPinProps {
 
 const InterviewPin = ({ interview, onMockPage = false }: InterviewPinProps) => {
     const navigate = useNavigate();
-    const { userId } = useAuth();
+    useAuth();
 
     const handleDelete = async () => {
         try {
